@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/*#c5ebd6
+#83e1ad
+#2fa866
+#1a5c37
+#063d1e */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif+Caption:ital@0;1&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url("../fontes/idroid.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url("../fontes/BebasNeue-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #2fa866;
+    --cor3: #1a5c37;
+    --cor4: #063d1e;
+    --cor5: #3ddc84;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android:'android';
+
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    color: white;
+    background-color:#ebe5c5;
+    margin: 0;
+
+}
+a.externo::after{
+    content: '🔗 \00A0';
+}
+
+header {
+    background: linear-gradient(to bottom, #83e1ad, #3c9864, #3b845b, #1a5c37, #063d1e);
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #063d1e;
+    padding: 50px ;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 2px 1px 0px black;
+    
+  
+}
+
+header h1{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 45px;
+    margin-bottom: 10px;
+    align-items:center;
+    margin-top: 20px;
+}
+
+header p{
+    text-align: center;
+}
+
+header p span{
+    display: block;
+}
+
+
+.links{
+    background-color: #063d1e;
+    padding: 10px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav > a:hover{ /* propriedade pra mudar de cor quando passar o mouse em cima*/
+    background-color: #2fa866;
+}
+
+main h1{
+    color:#063d1e;
+    font-family: var(--fonte-android);
+
+}
+
+main {
+    color: black;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main p{
+    font-family:var(--fonte-padrao);
+    text-align: justify;
+    font-size: 16px;
+    text-indent: 30px; /* espaço no inicio de cada paragráfo*/
+    line-height: 1.5em; /*(espaço)altura da linha*/
+    margin: 15px 0px;
+}
+
+main h1{
+    text-indent: 15px;
+}
+
+
+main h2{
+   font-family: var(--fonte-android);
+   color: #063d1e;
+   font-size: 1.3em;
+   background-image: linear-gradient(to right, #83e1ad, transparent);
+   text-indent: 8px;
+}
+
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    width: 50%;
+    display: block; /*propiedade para centralizar uma imagem*/
+    margin: auto;
+}
+
+main strong{
+    color:#063d1e;
+    font-weight: bold;
+    
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color:#063d1e ;
+    background-color: #83e1ad;
+    padding: 2px 6px;
+}
+main a:hover{
+    text-decoration: underline;
+    
+}
+
+div.video{
+    background-color: #063d1e;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top:5% ;
+    left:5% ;
+    width:90% ;
+    height:90% ;
+}
+ 
+aside{
+    background-color:#83e1ad ;
+    padding: 10px;
+    border-radius:10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+aside > h3{
+    background-color: #063d1e;
+    color: white;
+    padding: 10px;
+    margin: -10px - 10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 10px;
+}
+
+aside > ul{
+    columns: 2; /* divide as listas em partes.*/
+    list-style-type: '🗸 \00A0\00A0'; /* numeração que dá o espaço.*/
+    list-style-position: inside;
+}
+
+footer{
+    background-color: #063d1e;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding-bottom: 0.8em;
+    
+}
+
